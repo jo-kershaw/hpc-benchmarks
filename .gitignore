@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+
+# generated figures
+*.png
+*.svg
+
+# generated summaries
+*_summary.csv
+
+# Benchmark measurements - not for public release
+*.csv
