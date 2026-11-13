@@ -6,13 +6,15 @@ Comparing different aspects of system performance and investigating how results 
 
 ## Benchmarks
 
-- **HPL (High Performance Linpack):** Floating-point performance, including the effect of block size.
+- **HPL (High Performance Linpack):** CPU and GPU floating-point performance, investigating matrix size, block size and scaling across nodes. GPU tests use NVIDIA HPL on Calder's H200 GPUs.
 - **STREAM:** Memory bandwidth at different OpenMP thread counts.
 - **OSU MPI Micro-Benchmarks:** MPI communication performance, including latency, bandwidth and collective operations.
 
 ## Repository contents
 
-- `hpl/` — Slurm scripts, HPL configuration files and plotting code.
+- `hpl/cpu/` — CPU HPL submission scripts and configurations.
+- `hpl/gpu/` — GPU HPL submission scripts, configurations and results collection code.
+- `hpl/` — Additional HPL analysis and plotting code.
 - `stream/` — Slurm script and plotting code.
 - `osu/` — MPI benchmark submission script.
 
@@ -21,5 +23,3 @@ Comparing different aspects of system performance and investigating how results 
 Original benchmark measurements are not included in this repository.
 
 The scripts were written for the Leeds HPC environment and may need modification to run on other systems.
-
-Small synthetic datasets may be added to demonstrate the plotting scripts.
